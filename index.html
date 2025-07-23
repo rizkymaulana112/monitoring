@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Monitoring Suhu</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <h1>Monitoring Rumah Maul</h1>
+
+  <div class="data">
+    <div class="box">
+      <img src="/gambar/termometer.png" alt="ikon suhu" class="ikon-box" />
+      <p id="nilai_suhu">Suhu: -- °C</p>
+    </div>
+
+    <div class="box">
+      <img src="/gambar/kelembaban.png" alt="ikon kelembaban" class="ikon-box" />
+      <p id="nilai_kelembaban">Kelembaban: -- %</p>
+    </div>
+
+    <div class="box">
+      <img src="/gambar/gas.png" alt="ikon jarak" class="ikon-box" />
+      <p id="nilai_jarak">Gas: -- %</p>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+  <script src="data.js"></script>
+</body>
+</html>

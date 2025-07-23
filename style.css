@@ -1,0 +1,56 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #FAF7F3;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #065084;
+    margin-bottom: 30px;
+}
+
+.data {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.box {
+    background-color: #ffffff;
+    border: 2px solid #065084;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    height: 160px; /* Tambah tinggi tetap */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #065084;
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* ⬅️ Ini yang bikin konten rata tengah vertikal */
+    gap: 10px;
+}
+
+.ikon-box {
+    width: 100px;
+    height: 110px; /* ⬅️ Samakan tinggi agar posisi teks konsisten */
+    object-fit: contain;
+}
+
+
+@media (max-width: 600px) {
+    .data {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+    }
+}
